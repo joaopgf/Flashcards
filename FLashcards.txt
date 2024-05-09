@@ -142,3 +142,50 @@ Resposta: ?? = arquivos novos não rastreados
 
 Pergunta: Como se pode ver os status do git de forma curta ?
 Resposta: usando o comando git status -s ou git status --short.
+
+                    Flahcard 27:
+
+Pergunta: Como se pode ignorar arquivos ?
+Resposta: criando um arquivo chamado .gitignore, contendo uma lista de padrões de nomes de arquivo que devem ser ignorados
+
+                    Flahcard 28:
+
+Pergunta: explique a legenda deste exemplo de git ignore:
+$ cat .gitignore
+*.[oa]
+*~
+Resposta: A primeira linha diz ao Git para ignorar todos os arquivos que terminem com “.o” ou “.a” – arquivos objeto ou de arquivamento, que podem ser produtos do processo de compilação. A segunda linha diz ao Git para ignorar todos os arquivos cujo nome termine com um til (~)
+
+                    Flahcard 29:
+
+Pergunta: Quais as regras para os padrões que podem ser usados no arquivo .gitignore ?
+Resposta: Linhas em branco ou começando com # são ignoradas.
+
+          Os padrões que normalmente são usados para nomes de arquivos funcionam.
+
+          Você pode iniciar padrões com uma barra (/) para evitar recursividade.
+
+          Você pode terminar padrões com uma barra (/) para especificar um diretório.
+
+          Você pode negar um padrão ao fazê-lo iniciar com um ponto de exclamação (!).
+
+                    Flahcard 30:
+
+Pergunta: Quais outros exemplo do .gitignore ?
+Resposta: # ignorar arquivos com extensão .a
+          *.a
+
+          # mas rastrear o arquivo lib.a, mesmo que você esteja ignorando os arquivos .a acima
+          !lib.a
+
+          # ignorar o arquivo TODO apenas no diretório atual, mas não em subdir/TODO
+          /TODO
+
+          # ignorar todos os arquivos no diretório build/
+          build/
+
+          # ignorar doc/notes.txt, mas não doc/server/arch.txt
+          doc/*.txt
+
+          # ignorar todos os arquivos .pdf no diretório doc/
+          doc/**/*.pdf
