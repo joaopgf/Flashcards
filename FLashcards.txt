@@ -1,19 +1,18 @@
 					Flashcard 1:
 
-O que é um Controle de Versão ?
+Pergunta: O que é um Controle de Versão ?
 
-Definição: Um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que versões específicas possam ser lembradas posteriormente.
+Resposta: Definição: Um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que versões específicas possam ser lembradas posteriormente.
 
 					Flashcard 2:
 
-O que é um Sistema de Controle de Versão (VCS)
-Definição: Uma ferramenta que permite a gestão e registro de alterações em arquivos, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações, entre outras funcionalidades.
+Pergunta: O que é um Sistema de Controle de Versão (VCS)
+Resposta: Definição: Uma ferramenta que permite a gestão e registro de alterações em arquivos, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações, entre outras funcionalidades.
 
 					Flashcard 3:
 
-Quais as Vantagens do Controle de Versão ?
-Detalhes:
-Permite reverter para estados anteriores de arquivos ou projetos.
+Pergunta: Quais as Vantagens do Controle de Versão ?
+Resposta: Permite reverter para estados anteriores de arquivos ou projetos.
 Facilita a comparação de mudanças ao longo do tempo.
 Possibilita identificar quem modificou um arquivo e quando.
 Facilita a recuperação de arquivos em caso de perda ou erro.
@@ -21,8 +20,8 @@ Requer pouco esforço para implementação e uso.
 
 					Flashcard 4:
 
-O que são Sistemas Locais de Controle de Versão
-Definição: Métodos de controle de versão onde as alterações nos arquivos são registradas localmente, geralmente em um banco de dados simples, facilitando a gestão das revisões.
+Pergunta: O que são Sistemas Locais de Controle de Versão
+Resposta: Definição: Métodos de controle de versão onde as alterações nos arquivos são registradas localmente, geralmente em um banco de dados simples, facilitando a gestão das revisões.
 
 					Flashcard 5:
 
