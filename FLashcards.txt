@@ -78,47 +78,47 @@ Resposta: Criando um você mesmo ou clonando um repositório já existente
 Pergunta: Como você pode criar um repositório no git ?
 Resposta: Usando o comando $ git init para iniciar um repositório e criar uma pasta chamada ".git"
 
-					Flahcard 15:
+					Flahcard 16:
 
 Pergunta: Como você pode clonar um repositório no git ?
 Resposta: Usando o comando: git clone [url]
 
-					Flahcard 16:
+					Flahcard 17:
 
 Pergunta: O que são arquivos  rastreados ?
 Resposta: arquivos que foram adicionados na última snapshot (git reconhece)
 
-					Flahcard 17:
+					Flahcard 18:
 
 Pergunta: quais são os estados dos arquivos rastreados ?
 Resposta: não modificado, modificado e preparados (adicionado ao stage)
 
-					Flahcard 18:
+					Flahcard 19:
 
 Pergunta: Qual comando pode ser usado para verificar os status dos arquivos ?
 Resposta: Usando o comando: git status
 
-					Flahcard 19:
+					Flahcard 20:
 
 Pergunta: Como você pode começa a rastrear um arquivo novo ?
 Resposta: Usando o comando: git add <nome do arquivo>
 
-					Flahcard 20:
+					Flahcard 21:
 
 Pergunta: O que acontece quando você usa o comando git add ?
 Resposta: O git começa a rastrear o arquivo no diretório. O comando git add recebe o caminho de um arquivo ou de um diretório. Se for um diretório, o comando adiciona todos os arquivos contidos nesse diretório recursivamente.
 
-					Flahcard 21:
+					Flahcard 22:
 
 Pergunta: Além de rastrear arquivos, qual outros propósitos do comando git add ?
 Resposta: O comando git add serve para começar a rastrear arquivos e também para outras coisas, como marcar arquivos que estão em conflito de mesclagem como resolvidos. Pode ser útil pensar nesse comando mais como “adicione este conteúdo ao próximo commit”.
 
-					Flahcard 22:
+					Flahcard 23:
 
 Pergunta: O que acontece quando você adiciona um arquivo ao stage mas o altera depois ?
 Resposta: O arquivo irá aparecer na área de stage e na área de arquivos que não foram adicionados ao stage, isso ocorre porque quando se usa git add o git adiciona ao stage o arquivo do jeito que ele está, para resolver isso basta usar o comando de git add novamente no arquivo.
 
-					Flahcard 23:
+					Flahcard 24:
 
 Pergunta: Como se pode ver os status do git de forma curta ?
 Resposta: usando o comando git status -s ou git status --short.
@@ -130,10 +130,15 @@ A  lib/git.rb
 M  lib/simplegit.rb
 ?? LICENSE.txt
 
-					Flahcard 24:
+					Flahcard 25:
 
 Pergunta: O que significa cada símbolo no status curto do git ?
 Resposta: ?? = arquivos novos não rastreados
           A = novos arquivos que foram adicionados à área de stage
-	  M= arquivos modificados
-	  MM = O arquivo foi modificado, foi para o stage e foi modificado de novo, de maneira que há alterações para ele tanto no estado preparado quanto no estado não-preparado.
+	      M= arquivos modificados
+	      MM = O arquivo foi modificado, foi para o stage e foi modificado de novo, de maneira que há alterações para ele tanto no estado preparado quanto no estado não-preparado.
+
+                    Flahcard 26:
+
+Pergunta: Como se pode ver os status do git de forma curta ?
+Resposta: usando o comando git status -s ou git status --short.
