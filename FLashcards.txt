@@ -58,67 +58,67 @@ Resposta: Utilize o comando: $ git config --global core.editor nome_do_editor
 Pergunta: O que acontece se você não configurar um editor de texto padrão para o Git?
 Resposta: O Git usará o editor padrão do sistema, que geralmente é o Vim.
 
-					Flahcard 12:
+					Flashcard 12:
 
 Pergunta: Como você pode ver todas as configurações já feitas no git ?
 Resposta: Usando o comando $ git config --list
 
-					Flahcard 13:
+					Flashcard 13:
 
 Pergunta: Como você pode ver apenas uma configuração específica no git, como por ex. o nome do usuário ?
 Resposta: Usando o comando $ git config <ex> // $ git config user.name
 
-					Flahcard 14:
+					Flashcard 14:
 
 Pergunta: Como você pode obter um repositório no git ?
 Resposta: Criando um você mesmo ou clonando um repositório já existente
 
-					Flahcard 15:
+					Flashcard 15:
 
 Pergunta: Como você pode criar um repositório no git ?
 Resposta: Usando o comando $ git init para iniciar um repositório e criar uma pasta chamada ".git"
 
-					Flahcard 16:
+					Flashcard 16:
 
 Pergunta: Como você pode clonar um repositório no git ?
 Resposta: Usando o comando: git clone [url]
 
-					Flahcard 17:
+					Flashcard 17:
 
 Pergunta: O que são arquivos  rastreados ?
 Resposta: arquivos que foram adicionados na última snapshot (git reconhece)
 
-					Flahcard 18:
+					Flashcard 18:
 
 Pergunta: quais são os estados dos arquivos rastreados ?
 Resposta: não modificado, modificado e preparados (adicionado ao stage)
 
-					Flahcard 19:
+					Flashcard 19:
 
 Pergunta: Qual comando pode ser usado para verificar os status dos arquivos ?
 Resposta: Usando o comando: git status
 
-					Flahcard 20:
+					Flashcard 20:
 
 Pergunta: Como você pode começa a rastrear um arquivo novo ?
 Resposta: Usando o comando: git add <nome do arquivo>
 
-					Flahcard 21:
+					Flashcard 21:
 
 Pergunta: O que acontece quando você usa o comando git add ?
 Resposta: O git começa a rastrear o arquivo no diretório. O comando git add recebe o caminho de um arquivo ou de um diretório. Se for um diretório, o comando adiciona todos os arquivos contidos nesse diretório recursivamente.
 
-					Flahcard 22:
+					Flashcard 22:
 
 Pergunta: Além de rastrear arquivos, qual outros propósitos do comando git add ?
 Resposta: O comando git add serve para começar a rastrear arquivos e também para outras coisas, como marcar arquivos que estão em conflito de mesclagem como resolvidos. Pode ser útil pensar nesse comando mais como “adicione este conteúdo ao próximo commit”.
 
-					Flahcard 23:
+					Flashcard 23:
 
 Pergunta: O que acontece quando você adiciona um arquivo ao stage mas o altera depois ?
 Resposta: O arquivo irá aparecer na área de stage e na área de arquivos que não foram adicionados ao stage, isso ocorre porque quando se usa git add o git adiciona ao stage o arquivo do jeito que ele está, para resolver isso basta usar o comando de git add novamente no arquivo.
 
-					Flahcard 24:
+					Flashcard 24:
 
 Pergunta: Como se pode ver os status do git de forma curta ?
 Resposta: usando o comando git status -s ou git status --short.
@@ -130,7 +130,7 @@ A  lib/git.rb
 M  lib/simplegit.rb
 ?? LICENSE.txt
 
-					Flahcard 25:
+					Flashcard 25:
 
 Pergunta: O que significa cada símbolo no status curto do git ?
 Resposta: ?? = arquivos novos não rastreados
@@ -138,17 +138,17 @@ Resposta: ?? = arquivos novos não rastreados
 	      M= arquivos modificados
 	      MM = O arquivo foi modificado, foi para o stage e foi modificado de novo, de maneira que há alterações para ele tanto no estado preparado quanto no estado não-preparado.
 
-                    Flahcard 26:
+                    Flashcard 26:
 
 Pergunta: Como se pode ver os status do git de forma curta ?
 Resposta: usando o comando git status -s ou git status --short.
 
-                    Flahcard 27:
+                    Flashcard 27:
 
 Pergunta: Como se pode ignorar arquivos ?
 Resposta: criando um arquivo chamado .gitignore, contendo uma lista de padrões de nomes de arquivo que devem ser ignorados
 
-                    Flahcard 28:
+                    Flashcard 28:
 
 Pergunta: explique a legenda deste exemplo de git ignore:
 $ cat .gitignore
@@ -156,7 +156,7 @@ $ cat .gitignore
 *~
 Resposta: A primeira linha diz ao Git para ignorar todos os arquivos que terminem com “.o” ou “.a” – arquivos objeto ou de arquivamento, que podem ser produtos do processo de compilação. A segunda linha diz ao Git para ignorar todos os arquivos cujo nome termine com um til (~)
 
-                    Flahcard 29:
+                    Flashcard 29:
 
 Pergunta: Quais as regras para os padrões que podem ser usados no arquivo .gitignore ?
 Resposta: Linhas em branco ou começando com # são ignoradas.
@@ -169,7 +169,7 @@ Resposta: Linhas em branco ou começando com # são ignoradas.
 
           Você pode negar um padrão ao fazê-lo iniciar com um ponto de exclamação (!).
 
-                    Flahcard 30:
+                    Flashcard 30:
 
 Pergunta: Quais outros exemplo do .gitignore ?
 Resposta: # ignorar arquivos com extensão .a
@@ -189,3 +189,18 @@ Resposta: # ignorar arquivos com extensão .a
 
           # ignorar todos os arquivos .pdf no diretório doc/
           doc/**/*.pdf
+	
+					Flashcard 31:
+
+Pergunta: Qual seria a definição de patch ?
+Resposta: As linhas que foram adicionadas e removidas
+
+					Flashcard 32:
+
+Pergunta: Como ver os status de forma mais detalhada ?
+Resposta: Usando o comando git diff
+
+					Flashcard 33:
+
+Pergunta: Como se pode ver as alterações que foram mandadas para o stage e que entrarão no próximo commit, comparando as alterações que estão no stage com o último commit ?
+Resposta: Usando o comando git diff --staged ou git diff --cached.
