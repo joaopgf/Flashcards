@@ -204,3 +204,9 @@ Resposta: Usando o comando git diff
 
 Pergunta: Como se pode ver as alterações que foram mandadas para o stage e que entrarão no próximo commit, comparando as alterações que estão no stage com o último commit ?
 Resposta: Usando o comando git diff --staged ou git diff --cached.
+
+					Flashcard 34:
+
+Pergunta: Como commitar com descrição no git ?
+Resposta: usando o comando git commit -m "mensagem".
+
