@@ -210,3 +210,53 @@ Resposta: Usando o comando git diff --staged ou git diff --cached.
 Pergunta: Como commitar com descrição no git ?
 Resposta: usando o comando git commit -m "mensagem".
 
+					Flashcard 35:
+
+Pergunta: Como mandar para o stage todos os itens modificados ?
+Resposta: usando o comando git commit -a ou git add . .
+
+					Flashcard 36:
+
+Pergunta: O que acontece se você simplesmente remover o arquivo do seu diretório  ?
+Resposta: Ele aparecerá sob a área “Changes not staged for commit” (isto é, fora do stage) da saída do git status.
+
+					Flashcard 37:
+
+Pergunta: Como se remove um arquivo do git ?
+Resposta: usando o comando git rm e depois fazendo um commit .
+
+					Flashcard 38:
+
+Pergunta: Como manter o arquivo no diretório de trabalho, mas removê-lo da sua área de stage. Em outras palavras, como manter o arquivo no disco rígido, mas não deixá-lo mais sob controle do Git ?
+Resposta: usando o comando git rm --cached <ex: README>.
+
+					Flashcard 39:
+
+Pergunta: O que este comando irá fazer ao ser executado: $ git rm log/\*.log ?
+Resposta: Esse comando remove todos os arquivos que tenham a extensão .log do diretório log/.
+
+					Flashcard 40:
+
+Pergunta: Qual comando que irá remover todos os arquivos cujos nomes terminem com um ~ ?
+Resposta: git rm \*~
+
+					Flashcard 41:
+
+Pergunta: Como renomear um arquivo no git ?
+Resposta: Usando o comando git mv arq_origem arq_destino
+
+					Flashcard 42:
+
+Pergunta: Como ver o histórico de commits feitos no repositório em ordem cronológica inversa; isto é, o commit mais recente aparece primeiro ?
+Resposta: Usando o comando git log.
+
+					Flashcard 43:
+
+Pergunta: Como ver as diferenças introduzidas em cada commit ?
+Resposta: Usando o comando git log -p
+
+					Flashcard 44:
+
+Pergunta: Como ver as diferenças introduzidas nos últimos n commits ?
+Resposta: Usando o comando git log -p -n
+
