@@ -2,12 +2,12 @@
 
 Pergunta: O que é um Controle de Versão ?
 
-Resposta: Definição: Um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que versões específicas possam ser lembradas posteriormente.
+Resposta: Definição: Um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que versões específicas possam ser lembradas posteriormente
 
 					Flashcard 2:
 
 Pergunta: O que é um Sistema de Controle de Versão (VCS)
-Resposta: Definição: Uma ferramenta que permite a gestão e registro de alterações em arquivos, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações, entre outras funcionalidades.
+Resposta: Definição: Uma ferramenta que permite a gestão e registro de alterações em arquivos, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações, entre outras funcionalidades
 
 					Flashcard 3:
 
@@ -16,22 +16,22 @@ Resposta: Permite reverter para estados anteriores de arquivos ou projetos.
 Facilita a comparação de mudanças ao longo do tempo.
 Possibilita identificar quem modificou um arquivo e quando.
 Facilita a recuperação de arquivos em caso de perda ou erro.
-Requer pouco esforço para implementação e uso.
+Requer pouco esforço para implementação e uso
 
 					Flashcard 4:
 
 Pergunta: O que são Sistemas Locais de Controle de Versão
-Resposta: Definição: Métodos de controle de versão onde as alterações nos arquivos são registradas localmente, geralmente em um banco de dados simples, facilitando a gestão das revisões.
+Resposta: Definição: Métodos de controle de versão onde as alterações nos arquivos são registradas localmente, geralmente em um banco de dados simples, facilitando a gestão das revisões
 
 					Flashcard 5:
 
 Pergunta: Por que um designer gráfico ou web designer deveria usar um sistema de controle de versão?
-Resposta: Para manter todas as versões de uma imagem ou layout, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações e recuperação de arquivos em caso de perda ou erro.
+Resposta: Para manter todas as versões de uma imagem ou layout, possibilitando a reversão para estados anteriores, comparação de mudanças, identificação de autores de modificações e recuperação de arquivos em caso de perda ou erro
 
 					Flashcard 6:
 
 Pergunta: Por que é importante configurar seu nome de usuário e endereço de e-mail ao instalar o Git?
-Resposta: Cada commit no Git usa essa informação, e ela é carimbada de forma imutável nos commits que você cria.
+Resposta: Cada commit no Git usa essa informação, e ela é carimbada de forma imutável nos commits que você cria
 
 					Flashcard 7:
 
@@ -46,7 +46,7 @@ Resposta: Utilize o comando: $ git config --global user.email fulanodetal@exempl
 					Flashcard 9:
 
 Pergunta: O que significa usar a opção --global ao configurar seu nome de usuário e endereço de e-mail no Git?
-Resposta: Significa que o Git usará essa informação para qualquer coisa que você fizer no sistema, e você só precisa configurá-la uma vez.
+Resposta: Significa que o Git usará essa informação para qualquer coisa que você fizer no sistema, e você só precisa configurá-la uma vez
 
 					Flashcard 10:
 
@@ -56,7 +56,7 @@ Resposta: Utilize o comando: $ git config --global core.editor nome_do_editor
 					Flashcard 11:
 
 Pergunta: O que acontece se você não configurar um editor de texto padrão para o Git?
-Resposta: O Git usará o editor padrão do sistema, que geralmente é o Vim.
+Resposta: O Git usará o editor padrão do sistema, que geralmente é o Vim
 
 					Flashcard 12:
 
@@ -106,22 +106,22 @@ Resposta: Usando o comando: git add <nome do arquivo>
 					Flashcard 21:
 
 Pergunta: O que acontece quando você usa o comando git add ?
-Resposta: O git começa a rastrear o arquivo no diretório. O comando git add recebe o caminho de um arquivo ou de um diretório. Se for um diretório, o comando adiciona todos os arquivos contidos nesse diretório recursivamente.
+Resposta: O git começa a rastrear o arquivo no diretório. O comando git add recebe o caminho de um arquivo ou de um diretório. Se for um diretório, o comando adiciona todos os arquivos contidos nesse diretório recursivamente
 
 					Flashcard 22:
 
 Pergunta: Além de rastrear arquivos, qual outros propósitos do comando git add ?
-Resposta: O comando git add serve para começar a rastrear arquivos e também para outras coisas, como marcar arquivos que estão em conflito de mesclagem como resolvidos. Pode ser útil pensar nesse comando mais como “adicione este conteúdo ao próximo commit”.
+Resposta: O comando git add serve para começar a rastrear arquivos e também para outras coisas, como marcar arquivos que estão em conflito de mesclagem como resolvidos. Pode ser útil pensar nesse comando mais como “adicione este conteúdo ao próximo commit”
 
 					Flashcard 23:
 
 Pergunta: O que acontece quando você adiciona um arquivo ao stage mas o altera depois ?
-Resposta: O arquivo irá aparecer na área de stage e na área de arquivos que não foram adicionados ao stage, isso ocorre porque quando se usa git add o git adiciona ao stage o arquivo do jeito que ele está, para resolver isso basta usar o comando de git add novamente no arquivo.
+Resposta: O arquivo irá aparecer na área de stage e na área de arquivos que não foram adicionados ao stage, isso ocorre porque quando se usa git add o git adiciona ao stage o arquivo do jeito que ele está, para resolver isso basta usar o comando de git add novamente no arquivo
 
 					Flashcard 24:
 
 Pergunta: Como se pode ver os status do git de forma curta ?
-Resposta: usando o comando git status -s ou git status --short.
+Resposta: usando o comando git status -s ou git status --short
 ex:
 $ git status -s
 M README
@@ -136,12 +136,12 @@ Pergunta: O que significa cada símbolo no status curto do git ?
 Resposta: ?? = arquivos novos não rastreados
           A = novos arquivos que foram adicionados à área de stage
 	      M= arquivos modificados
-	      MM = O arquivo foi modificado, foi para o stage e foi modificado de novo, de maneira que há alterações para ele tanto no estado preparado quanto no estado não-preparado.
+	      MM = O arquivo foi modificado, foi para o stage e foi modificado de novo, de maneira que há alterações para ele tanto no estado preparado quanto no estado não-preparado
 
                     Flashcard 26:
 
 Pergunta: Como se pode ver os status do git de forma curta ?
-Resposta: usando o comando git status -s ou git status --short.
+Resposta: usando o comando git status -s ou git status --short
 
                     Flashcard 27:
 
@@ -208,32 +208,32 @@ Resposta: Usando o comando git diff --staged ou git diff --cached.
 					Flashcard 34:
 
 Pergunta: Como commitar com descrição no git ?
-Resposta: usando o comando git commit -m "mensagem".
+Resposta: usando o comando git commit -m "mensagem"
 
 					Flashcard 35:
 
 Pergunta: Como mandar para o stage todos os itens modificados ?
-Resposta: usando o comando git commit -a ou git add . .
+Resposta: usando o comando git commit -a ou git add . 
 
 					Flashcard 36:
 
 Pergunta: O que acontece se você simplesmente remover o arquivo do seu diretório  ?
-Resposta: Ele aparecerá sob a área “Changes not staged for commit” (isto é, fora do stage) da saída do git status.
+Resposta: Ele aparecerá sob a área “Changes not staged for commit” (isto é, fora do stage) da saída do git status
 
 					Flashcard 37:
 
 Pergunta: Como se remove um arquivo do git ?
-Resposta: usando o comando git rm e depois fazendo um commit .
+Resposta: usando o comando git rm e depois fazendo um commit 
 
 					Flashcard 38:
 
 Pergunta: Como manter o arquivo no diretório de trabalho, mas removê-lo da sua área de stage. Em outras palavras, como manter o arquivo no disco rígido, mas não deixá-lo mais sob controle do Git ?
-Resposta: usando o comando git rm --cached <ex: README>.
+Resposta: usando o comando git rm --cached <ex: README>
 
 					Flashcard 39:
 
 Pergunta: O que este comando irá fazer ao ser executado: $ git rm log/\*.log ?
-Resposta: Esse comando remove todos os arquivos que tenham a extensão .log do diretório log/.
+Resposta: Esse comando remove todos os arquivos que tenham a extensão .log do diretório log/
 
 					Flashcard 40:
 
@@ -248,7 +248,7 @@ Resposta: Usando o comando git mv arq_origem arq_destino
 					Flashcard 42:
 
 Pergunta: Como ver o histórico de commits feitos no repositório em ordem cronológica inversa; isto é, o commit mais recente aparece primeiro ?
-Resposta: Usando o comando git log.
+Resposta: Usando o comando git log
 
 					Flashcard 43:
 
@@ -260,3 +260,80 @@ Resposta: Usando o comando git log -p
 Pergunta: Como ver as diferenças introduzidas nos últimos n commits ?
 Resposta: Usando o comando git log -p -n
 
+					Flashcard 45:
+
+Pergunta: Como ver algumas estatísticas abreviadas para cada commit ?
+Resposta: Usando o comando git log --stat
+
+
+					Flashcard 46:
+
+Pergunta: Como mudar o formato dos commits mostrados ?
+Resposta: Usando o comando git log --pretty
+
+					Flashcard 47:
+
+Pergunta: Como ver os commits em uma só linha ?
+Resposta: Usando o comando git log --pretty=oneline
+
+					Flashcard 48:
+
+Pergunta: Como configurar o formato dos commits que são mostrados ?
+Resposta: Usando o comando git log --pretty=format:
+
+					Flashcard 49:
+
+Pergunta: quais são as opções do comando git --pretty=format: ?
+Resposta: %H Hash do commit
+          %h Hash do commit abreviado
+		  %T Hash da árvore
+		  %t Hash da árvore abreviado
+		  %P Hashes dos pais
+		  %p Hashes dos pais abreviado
+		  %an Nome do Autor
+		  %ae Email do Autor
+		  %ad Data do Autor (o formato segue a opção --date=option)
+		  %ar Data do Autor, relativa
+		  %cn Nome do Committer
+		  %ce Email do Committer
+		  %cd Data do Committer
+		  %cr Data do Committer, relativa
+		  %s Comentário
+
+					Flashcard 50:
+
+Pergunta: Como configurar o formato dos commits que são mostrados ?
+Resposta: Usando o comando git log --pretty=format:
+
+					Flashcard 51:
+
+Pergunta: Digite um comando que mostre as últimas commits com a hash abreviada, nome do autor, data relativa do autor e comentários.
+Resposta: $ git log --pretty=format:"%h - %an, %ar : %s"
+ca82a6d - Scott Chacon, 6 years ago : changed the version number
+085bb3b - Scott Chacon, 6 years ago : removed unnecessary test
+a11bef0 - Scott Chacon, 6 years ago : first commit
+
+					Flashcard 52:
+
+Pergunta: Qual a diferença de autor e commiter ?
+Resposta:  O autor é a pessoa que escreveu originalmente o trabalho, ao passo que a pessoa que submeteu o trabalho é o committer. Então, se alguém criar uma correção para um projeto e um dos membros principais submete a correção, ambos receberão crédito – a pessoa como autor, e o membro principal como commiter.
+
+					Flashcard 53:
+
+Pergunta: Qual comando mostra as commits e adiciona um pequeno gráfico ASCII mostrando o histórico de branch e merge ?
+Resposta: git log --graph
+
+					Flashcard 54:
+
+Pergunta: Escreva um comando que mostre as commits no formato de hash abreviada, comentários e com gráfico.
+Resposta: $ git log --pretty=format:"%h %s" --graph
+* 2d3acf9 ignore errors from SIGCHLD on trap
+*  5e3ee11 Merge branch 'master' of git://github.com/dustin/grit
+|\
+| * 420eac9 Added a method for getting the current branch.
+* | 30e367c timeout code and tests
+* | 5a09431 add timeout protection to grit
+* | e1193f8 support for heads with slashes in them
+|/
+* d6016bc require time for xmlschema
+*  11d191e Merge branch 'defunkt' into local
