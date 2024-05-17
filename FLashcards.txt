@@ -337,3 +337,72 @@ Resposta: $ git log --pretty=format:"%h %s" --graph
 |/
 * d6016bc require time for xmlschema
 *  11d191e Merge branch 'defunkt' into local
+
+					Flashcard 55:
+
+Pergunta: Qual a função de cada um destes itens ao utilizá-los no comando git log:
+-p
+--stat
+--shorstat
+--name-only
+--name-status
+--abbrev-commit 
+--relative-date 
+--graph 
+-- pretty ? 
+Resposta: -p Mostra o patch introduzido com cada commit.
+          --stat Mostra estatísticas de arquivos modificados em cada commit.
+		  --shortstat Exibe apenas a linha informando a alteração, inserção e exclusão do comando --stat.
+		  --name-only Mostra a lista de arquivos modificados após as informações de commit.--name-status Mostra também a lista de arquivos que sofreram modificação com informações adicionadas / modificadas / excluídas.
+		  --abbrev-commit Mostra apenas os primeiros caracteres da soma de verificação SHA-1 em vez de todos os 40.
+		  --relative-date Exibe a data em um formato relativo (por exemplo, " 2 semanas atrás ") em vez de usar o formato de data completo.
+		  --graph Exibe um gráfico ASCII do histórico de branches e merges ao lado da saída do log.
+		  --pretty Mostra os commits em um formato alternativo. As opções incluem oneline, short, full, fuller e format (onde você especifica seu próprio formato).
+
+					Flashcard 56:
+
+Pergunta: Como ver as últimas commits feitas a partir de 2 semanas atrás ?
+Resposta: git log --since=2.weeks
+
+					Flashcard 57:
+
+Pergunta: Quais os 2 formatos de uso do comando git log --since ?
+Resposta: Você pode usar uma data específica como "2024-05-16" ou uma data relativa como "12 anos 1 dia 3 minutos atrás"
+
+					Flashcard 58:
+
+Pergunta: Como filtrar commits de um autor em específico ?
+Resposta: git log --author autor
+
+					Flashcard 59:
+
+Pergunta: Como filtrar commits que contenham uma palavra ou frase em específico ?
+Resposta: git log --grep palavra
+
+					Flashcard 60:
+
+Pergunta: Como filtrar commits especificando autor e palavra ou frase ?
+Resposta: git log --grep palavra --author autor --all-match
+
+					Flashcard 61:
+
+Pergunta: Como filtrar commits a partir de uma palavra ou frase que foi adicionada ou removida ?
+Resposta: git log --Spalavra
+
+					Flashcard 62:
+
+Pergunta: Quais as opções para se usar de filtro no git log ?
+Resposta: -n Exibe somente os últimos n commits
+          --since// --after limita os commits após uma data específica
+		  --until// --before limita os commits para antes de uma data específica
+		  --author Mostra apenas os commits nos quais a entrada do autor corresponde à string especificada.
+		  --committer Mostra apenas os commits nos quais a entrada do committer corresponde à string especificada.
+		  --grep Mostra apenas os commits com uma mensagem de commit contendo a string
+		  -S mostrar apenas commits adicionando ou removendo o código que corresponde à string
+
+
+					Flashcard 63:
+
+Pergunta: Como filtrar as commits para vê-las com a hash abreviada, comentários, autor, e intervalo de data ?
+Resposta: git log --pretty="%h - %s" --author autor --since 2024-05-14 --before 2024-05-16
+
