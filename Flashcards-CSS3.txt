@@ -1,0 +1,310 @@
+p{
+    font-family: Arial;
+    color: blue;
+}
+p = seletor
+ font-family: Arial; = declaração
+ color: = propriedade
+ blue; = valor
+
+            Existem 3 tipos de CSS:
+CSS Inline: Usado dentro da tag, tem maior poder, mas só funciona na tag em que está
+CSS interno ou local: Usado dentro da tag style no head, tem poder intermediário e funciona apenas na página HTML em que está
+CSS Externo: Fica em um arquivo externo, tem poder baixo mas funciona em qualquer HTML que esteja conectado com ele.
+
+            Existem 4 formas de se colocar cores em CSS
+Por nome: apenas digitando o nome da cor
+Por código hexadecimal(0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f): #000000 - vai de 00 até ff
+Por RGB(Red, Green, Blue): 0, 0, 0 - vai de 000 até 255
+Por HSL (Hue, Saturation, Lightness): 0, 0%, 0% - vai de 0 a 360 e 0% a 100%
+Se houver mudança da opacidade o RGB e HSL ganharão a letra a (alpha), que indica a opacidade - vai de 0.000 até 1
+
+            Paletas de cores tem de 3 a 5 cores (média é 4, desconsidera branco e preto)
+
+            Existem 5 categorias de fontes:
+Serifadas = Tem Serifas, boa para leitura em papel
+Sans-serif = sem serifa, boa para leitura digital
+monoespaçadas = letras ocupam o mesmo espaço
+handwriting = simula escrita a mão
+display = letras diferentes, símbolos, emojis etc.
+
+            combinações seguras:
+Para slecionar fontes diferentes use as combinações seguras(safe combinations), que são 2 fontes + uma palavra genérica, por ex.:
+font-family: Arial, Helvetica, sans-serif;
+palavras genéricas podem ser serif, sans-serif, monospace etc.
+
+            Peso de fontes:
+Fontes possuem o parado weight(peso) que são: light, normal, bold e bolder ou números de 100 a 900. Isso regula a "Grossura" da fonte
+
+            Medidas em fontes:
+Fontes também possuem medidas:
+Medidas absolutas:
+mm, cm, in(polegadas), px(pixels), pt(pontos),pc(paica)
+pt e pc é recomendável para papel e não recomendável para digital
+
+Medidas relativas:
+em(medida relativa ao tamanho da fonte), ex(relativo a altura x de uma fonte), rem,vw(viewwidth)(referente a largura do viewport),vh (referente a altura do viewport), %
+16 px geralmente é igual a 1 em.
+            W3C recomenda usar apenas em e px.
+
+            shorthands:
+Há um atalho para as configurações de fonte que é a shorthand (mãozinha), ela condensa as 4 configurações font-style + font-weight + font-size + font-family
+ex.: font: italic bolder 3em sans-serif;
+
+            Há 2 maneiras de se colocar fontes no CSS
+Fontes por link:
+@import url('URL do site');
+ex.:
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+        
+        body{
+            font-family: MedievalSharp;
+            font-size: 16px;
+            color: black;
+        }
+
+
+Fontes locais:
+@font-face {
+            font-family:'nome que você quiser' ;
+            src: url('local do arquivo') format('formato do aquivo');
+        }
+
+ex.:
+@font-face {
+            font-family: 'love';
+            src: url('fonts/love larry.otf') format('opentype'), url('fonts/love\ larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+            Fontes possuem alguns tipos de formatos:
+Tipos de format()
+-opentype(otf)
+-truetype(ttf)
+-embedded-truetype
+-truetype-aat(Apple Advanced Typography)
+-svg
+
+            Como colocar degradê:
+body{
+            background-image: linear-gradient(to top/right/bottom/left, #6D59C0, #3fccb0, #B93590, #E33F5F, #FDD579 ); (pode usar como cor 'transparent')
+            background-attachment: fixed;
+        }
+
+            text-align = alinhamento do texto 
+            text-indent = espaço no começo do parágrafo
+
+            Id e classe:
+HTML id -> CSS #
+HTML class -> CSS .
+: -> pseudo classe (relacionada ao estado do objeto ex.: hover)
+:: -> pseudo-elemento
+> -> filho (objeto dentro de outro ex.: div contendo um p)
+
+            BOXS
+Altura da caixa: height
+Largura da caixa: width
+Contorno: border
+Espaço entre o conteúdo e borda: padding
+Espaço fora da borda: margin
+Espaço entre borda e margem: outline
+block-level: Se inicia em uma nova linha (quebra linha) e ocupa a largura toda da tela 
+inline-level: Se inicia ao lado do último elemento e ocupa uma largura de acordo com o conteúdo 
+
+            Exs. de block-level
+
+address
+div
+h1-6
+p
+blockquote
+canvas
+dd
+dl
+dd 
+fieldset
+figcaption
+figure
+hr
+li
+noscript
+ol
+ul
+pre 
+tfoot
+table
+section 
+main 
+header 
+nav 
+article
+aside
+footer
+form 
+video 
+
+            Exs. de inline-level:
+
+span
+abbr
+acronym
+b 
+bdo 
+br
+button
+cite
+a 
+dfn 
+i 
+img
+kbd
+map 
+object
+q 
+samp 
+script 
+textarea
+tt 
+var
+code 
+small 
+strong
+em 
+sup 
+sub 
+label
+button 
+input 
+output
+select 
+
+            Grouping tags:
+
+header = cabeçalho, pode ser o cabeçalho principal do site ou de um artigo/seção.  Normalmente tem títulos (h1-6) e subtítulos, pode ter também menus de navegação.
+
+nav = área que tem links de navegação, pode estar dentro do header.
+
+main = Agrupador usado para delimitar o conteúdo principal do site. Normalmente concentra seções, artigos e conteúdos periféricos.
+
+section = Cria seções para a página, pode conter o conteúdo diretamente no seu corpo ou dividi-los en artigos com conteúdos específicos. Segundo a W3C: "Uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho."
+
+article = contêm um conteúdo que pode ser lido de forma independente e diz respeito a um mesmo assunto, pode ser usado para delimitar posts, blogs, fóruns etc.
+
+aside = Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. normalmente está posicionado ao lado de um determinado texto ou no meio dele, tem múltiplos níveis.
+
+footer = cria um rodapé para o site todo, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem do conteúdo periférico, porém possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados etc.
+
+
+            USER AGENT: navegador aplicando configurações padrão
+
+            É recomendado usar o padding e margin na ordem: top, right, bottom e left
+
+            Quando o elemento é do tipo caixa, use (margin: auto;) para centralizar o conteúdo
+
+            Shorthands de border, padding, margin e outline:
+
+border:
+border-width: 10px;
+border-style: solid;
+border-color: aqua; -> border: 10px solid aqua;
+outline é igual a border !
+
+padding:
+padding-top: 10px ;
+padding-right: 10px ;
+padding-bottom: 10px ;
+padding-left: 10px; -> padding: 10px 10px 10px 10px; = padding:10px; (Se houver apenas 1 medida ela poderá servir para os 4  lados. Se hpuver 2 medidas a primeira será de cima e baixo e a segunda será dos lados)
+
+Margin e border-radious são iguais ao padding !
+
+Outro Ex.:
+margin:20px auto 40px auto; assim você pode centralizar a box
+
+            É possível mudar um conteúdo de block-level usando o parâmetro (display: inline;) e vice-versa com (display: block;)
+
+            É possível colocar bordas a partir de imagens:
+border: 22px solid black;
+            
+border-image-source: url('link da imagem');
+border-image-slice: 27;
+border-image-repeat: repeat;
+shorthand:
+border-image: url('link') 27 repeat;
+
+            Tamanho total de uma caixa = conteúdo + preenchimento + borda + margem (Contorno ja utiliza medida da margem)
+
+            Como centralizar uma imagem:
+Na tag img configure:
+display: block;
+border: auto;
+
+Ou 
+
+Coloque a tag img dentro de uma div 
+na tag da div configure:
+text-align: center;
+
+            Como arredondar vértices:
+border-radious: px;
+É possóvel configurar entre 1, 2 e 4 medidas.
+border-bottom-left-radius: ;
+border-bottom-right-radius: ;
+border-top-right-radius: ;
+border-top-left-radius: ;
+
+            Configurações globais:
+Use asterisco * para fazer configurações globais
+
+            Como deixar um site responsivo ?
+Use:
+Max-width
+Min-width
+Max-hight
+Min-hight
+Magin: auto;
+Em imagens use width: 100%;
+Use a tag picture e src media para deixar imagens mais responsivas de acordo com o tamanho da tela
+
+            Usando root:
+Ex. de root:
+:root{
+    --cor0: #ebe5c5; 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+            Colocando os números e símbolos das listas dentro do container:
+list-style-position: inside;
+
+            Fazendo listas se "espalharem" pelo container:
+columns: ;
+
+
+            Colocando símbolos nas listas:
+list-style-type: '\código';
+Dica:\00A0 = espaço
+Não é compatível com todo navegador
+
+            É possível usar magens negativas para utilizar mais opções de desing, Ex.:
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside h3{
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+}
+Juntar o h3 no topo do aside

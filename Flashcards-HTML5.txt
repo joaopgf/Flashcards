@@ -1,0 +1,161 @@
+            Tags HTML:
+
+head(<head></head>) = escopo da cabeça do texto
+
+body(<body></body>) = escopo do corpo do texto
+
+tittle(<tittle></tittle>) = título da página
+
+html(<html></html>) = escopo do documento html
+
+p(<p></p>) = parágrafo
+
+br(<br>) = faz com que os próximos itens apareçam em baixo
+
+hr(<hr>) = faz uma linha horizontal
+
+code(<code></code>) = deixa o texto mono espaçado, ideal para mostrar códigos
+
+h1,2,3...11(<h1></h1>) = Título (número menor = sub-assunto do número anterior)
+
+img(<img src="link ou local da imagem" alt="texto para aparecer quando não carregar">) = colocar fotos
+
+<link rel="shortcut icon" href="link ou local da imagem" type="image/x-icon"> = mudar ícone da página
+
+q(<q></q>) = deixa o texto entre áspas, ideal para citações curtas
+
+blockquote(<blockquote></blockquote>) = deixa o texto entre áspas, ideal para citações longas
+há também o parâmetro cite="" que é uma link para a citação
+
+abbr(<abbr title="Termo completo">Termo abreviado</abbr>) = usado para abreviações, passe o mouse em cima para ver o significado
+
+bdo(<bdo dir="direção a ser seguida"></bdo>) = muda a direção do texto (esquerda pra direita e vice versa)
+
+pre(<pre></pre>) = faz com que o texto apareça de forma idêntica ao que você escreveu, bom para mostrar códigos junto com a tag <code>
+
+picture(<picture></picture>) = pode ser usada com a tag source media para criar imagens dinâmicas e entre outros
+
+<source media="(max/min-width: xxxpx)" srcset="link da imagem" type="ex.:image/png">
+
+audio(<audio src="link do arquivo" type="formato do áudio, audio/mpeg ou wav ou ogg"></audio>)
+a tag audio possui alguns parâmetros:
+autoplay = toca o áudio sozinho
+controls = mostra os controles do áudio como play, pause etc...
+preload="" auto (padrão) // none = só carrega quando o usuário da play // metadata = carrega apenas informações importantes como duração 
+loop = reinicia o áudio quando acaba
+
+formatos de áudio: MP3, OGG, WAV
+
+para ter mais compatibilidade no áudio vc pode usar a tag audio sem parâmetros e dentro dela usar a tag source ex.:
+<audio> <source src="link do arquivo"> </audio>
+
+video(<video src="link do vídeo"></video>) = coloca vídeo no site
+A tag vídeo possúi alguns parâmetros como:
+width="" = define a larura do vídeo
+controls = mostra os controles do vídeo
+poster="link da foto" = define a capa(thumb) do vídeo
+para ter videos com damais compatibilidade você pode usar a tag source
+
+ol(<ol></ol>) = cria uma lista ordenada
+esta tag também possui o parâmetro (type="") que são:
+1 = deixa em ordem numérica ex.:1,2,3...
+A = deixa em ordem alfabética em caixa alta ex.: A,B,C...
+a = deixa em ordem alfabética em caixa baixa ex.: a,b,c...
+I = deixa em ordem numérica em números romanos em caixa alta ex.: I,II,III...
+i = deixa em ordem numérica em números romanos em caixa baixa ex.: i,ii,iii...
+
+ul(<ul></ul>) = cria uma lista não ordenada
+esta tag também possui o parâmetro (type="") que são:
+circle = coloca um círculo totalmente preto nos itens
+disk = coloca um círculo só com as bordas pretas e o centro branco nos itens
+square = coloca um quadrado nos itens
+
+as tag <ol> e <ul> também possuem o parâmetro (start=""), em que você coloca um valor numérico ao qual a lista irá se iniciar
+
+li(<li></li>) = linhas da lista ao qual você escreveu
+
+dl(<dl></dl>) = cria uma lista de definição
+dt(<dt></dt>) = termo
+dd(<dd></dd>) = definição do termo
+
+strong(<strong></strong>) = deixa o texto em negrito (significado)
+
+b(<b></b>) = deixa o texto em negrito (forma)
+
+em(<em></em>) = deixa o texto em itálico (significado)
+
+i(<i></i>) = deixa o texto em itálico (forma)
+
+mark(<mark></mark>) = deixar o texto grifado
+
+del(<del></del>) = traça uma linha no meio do texto
+
+ins(<ins></ins>) = traça uma linha em baixo do texto
+
+sub(<sub></sub>) = deixa o texto em baixo ex.: h20
+
+sup(<sup></sup>) = deixa o texto em cima ex.: X3+5
+
+a(<a href="link" ></a>) = insere um hipertexto
+a tag  a possui algos parâmetros
+
+rel(rel="") = indica que relação o link tem com a página
+external = levará a uma página externa
+nofollow = conteúdo não endossado, como link pago
+next = próximo conteúdo da página
+prev = último conteúdo da página acessado
+author = levará a um site do autor do artigo atual
+etc...
+
+            target(target=""):
+_blank = abre o link em uma nova guia
+_self = abre o link na própria guia
+por padrão a tag a vem com o target _blank
+
+download(download="local do arquivo") = faz com que o hiperlink baixe o conteúdo
+type(type="") = coloca o tipo de aplicação do arquivo a ser baixado ex.: type="application/pdf"
+
+<p>Exemplo</p>
+<p> = abertura de tag
+Exemplo = conteúdo
+</p> = fechamento de tag
+
+<a href="destino.html"> ex. de link <\a>
+<a> = abertura de tag
+href= parâmetro
+"destino.html" = valor
+ex. de link = conteúdo
+<a/> fechamento de tag
+
+ formatos de imagem:
+ JPEG = pode reduzir bem as fotos 
+ PNG(Portable Network Graphics) = pode mudar a opacidade (Ex.: fundo transparente), pode compactar mas nem tanto como o JPEG
+
+
+Para adicionar emojis escreva &#x(código hexadecimal);
+
+O formato preferencial para imagens de ícone é .ICO mas da pra usar em PNG
+ 
+é possível misturar listas de tipos iguais ou diferentes
+
+
+Semântica = significado 
+HTML5 = Semântica
+CSS = forma
+
+HTML = conteúdo
+CSS = estilo
+JavaScript = interatividade
+
+HTML id -> CSS #
+HTML class -> CSS .
+
+Grouping tags:
+header
+main 
+footer 
+nav 
+article 
+aside 
+section 
+div 

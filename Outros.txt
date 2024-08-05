@@ -1,0 +1,41 @@
+Sites:
+https://www.w3schools.com
+
+Site para fontes
+https://fonts.google.com
+https://www.dafont.com/seagram-tfb.font 
+
+site para paleta de cores:
+https://color.adobe.com/pt/create/color-wheel 
+https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+https://coolors.co/e5d4ed-6d72c3-5941a9-514f59-1d1128
+
+
+Símbolos: https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
+sites para pegar imagens e mais:
+https://unsplash.com/pt-br
+https://www.pexels.com/pt-br/
+https://br.freepik.com
+https://www.rawpixel.com https://pixabay.com/pt/
+https://libreshot.com
+OBS.: Conferir se há politica de direitos autorais ou política de venda de imagens
+
+programas gratuitos:
+gimp: imagens
+handbrake: vídeos
+
+Extensões na web:
+ColorZilla: Identificar cores em rgb e hexadecimal
+Fonts ninja: Identificar fontes (Apenas em texto) 
+
+Sites para achar fontes em imagens:
+https://www.whatfontis.com
+https://www.fontsquirrel.com
+https://www.myfonts.com
+
+Site para planejamento de site:
+https://mockflow.com
+
+Site de emoji:
+https://emojipedia.org

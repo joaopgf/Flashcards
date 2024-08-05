@@ -1,0 +1,2 @@
+2.4
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Desfazendo-coisas
