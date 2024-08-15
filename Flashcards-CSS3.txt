@@ -308,3 +308,14 @@ aside h3{
     padding: 10px;
 }
 Juntar o h3 no topo do aside
+
+            Para colocar uma imagem de fundo use background-image + url, ex.:
+background-image: url('imagens/wallpaper002.jpg');
+
+            O background-image também possui algumas funções:
+background-size: 1495px 712px; - define o tamanho da imagem de fundo
+background-repeat: ; - controla o padrão de repetição da imgem, ex.:
+repeat: é usado por padrão, faz a imagem ficar repetindo
+no-repeat: faz com que a imagem não fique se repetindo
+repeat-x: faz a imagem se repetir no eixo x
+repeat-y: faz a imagem se repetir no eixo y
