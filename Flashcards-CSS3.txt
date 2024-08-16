@@ -314,8 +314,50 @@ background-image: url('imagens/wallpaper002.jpg');
 
             O background-image também possui algumas funções:
 background-size: 1495px 712px; - define o tamanho da imagem de fundo
+contain = faz a imagem preencher todo o fundo sem cortes (imagem fica 100% exibida)
+cover = faz a imagem de fundo preencher a tela toda fazendo cortes quando necessário
+auto = faz o navegador tentar colocar a imagem toda no fundo
 background-repeat: ; - controla o padrão de repetição da imgem, ex.:
 repeat: é usado por padrão, faz a imagem ficar repetindo
 no-repeat: faz com que a imagem não fique se repetindo
 repeat-x: faz a imagem se repetir no eixo x
 repeat-y: faz a imagem se repetir no eixo y
+background-attachment: ; = faz um vínculo com a imagem de fundo
+scroll = conteúdo rola junto com a barra de scroll (padrão)
+fixed = fundo fica fixo e só o conteúdo rola para baixo
+            Shorthand background
+color, image, position, repeat, size, attachment // OBS.: background size não funciona na shorthand
+
+            Configurando conteúdos entre elementos dentro de outros elementos
+Ex.: 
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+o container tera position: relative; enquanto o conteudo terá position: absolute;
+com isso, o conteudo poderá configurar o left: (ex.: px ou %) ; e top: ;, porém o ponto de referência será o topo da esquerda, caso queira consertar, use transform: translate(px ou % por ex. , );, primeiro valor: positivo vai para direita, negativo para a esquerda, segundo valor: positivo vai para baixo e negativo para cima.
+exemplo de uso para centralizar conteudo dentro do container:
+
+#container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            margin: auto;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
