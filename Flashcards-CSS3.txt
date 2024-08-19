@@ -361,3 +361,13 @@ exemplo de uso para centralizar conteudo dentro do container:
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
+
+        Use text-transform para modificar o texto:
+lowercase: deixa todas as letras em caixa baixa
+uppercase: deixa todas as letras em caixa alta.
+
+            Use line-height para espaçar uma linha da outra.
+
+            Como fazer efeito paralax com imagem de fundo:
+backgorind-attachment: fixed;
