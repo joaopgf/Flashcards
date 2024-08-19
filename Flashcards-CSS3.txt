@@ -371,3 +371,13 @@ uppercase: deixa todas as letras em caixa alta.
 
             Como fazer efeito paralax com imagem de fundo:
 backgorind-attachment: fixed;
+
+            border-collapse:
+border-collapse: collapse; = faz com que os elementos da tabela fiquem "colados", sem espaço entre eles 
+border-collapse: separate; = configuração padrão, os elementos tem um espaçamento entre si
+
+            Alinhamento horizontal:
+text-align: left (padrão), center, right
+
+            Alinhamento vertical:
+vertical-algin: top, middle(padrão), bottom

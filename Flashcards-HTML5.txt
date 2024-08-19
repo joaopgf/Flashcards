@@ -159,3 +159,9 @@ article
 aside 
 section 
 div 
+
+            Hierarquia de tabelas(simples):
+table = tabela
+    Table Row (tr) = Linha de tabela
+        Table Header (th) = cabeçalho de tabela
+        Table Data (td) = dado de tabela 
