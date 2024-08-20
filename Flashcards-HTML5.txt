@@ -160,8 +160,42 @@ aside
 section 
 div 
 
-            Hierarquia de tabelas(simples):
+            Hierarquia/anatomia de tabelas(simples):
 table = tabela
     Table Row (tr) = Linha de tabela
         Table Header (th) = cabeçalho de tabela
         Table Data (td) = dado de tabela 
+
+        Hierarquia/anatomia de tabelas(grandes):
+
+Table = tabela
+    caption = legenda/título
+    THead
+        tr,th,td
+    Tbody
+        tr,th,td
+    TFoot
+        tr,th,td
+
+        Efeito zebrado em tabelas (recomendado para tabelas com letras pequenas/ tabelas muito grandes):
+Atribua a pseudo classe :nth-child()
+dentro do parênteses: odd = 2n - 1 = ímpar // even = 2n = par // 1n ou 2n ou 3n.....
+Ex.:
+tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+            Como fazer cabeçalho fixo em tabelas:
+Coloque o parâmetro position: relative; na tabela.
+No th da tr da thead coloque os parâmetros position: sticky;(posição para definir que o elemento irá grudar) e top: 0;(local em que o elemento irá grudar)
+Ex.: table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
