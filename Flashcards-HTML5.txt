@@ -177,6 +177,13 @@ Table = tabela
     TFoot
         tr,th,td
 
+        Sempre coloque o escopo (scope) em todos os th:
+scope=""
+col
+colgroup
+row 
+rowgroup
+
         Efeito zebrado em tabelas (recomendado para tabelas com letras pequenas/ tabelas muito grandes):
 Atribua a pseudo classe :nth-child()
 dentro do parênteses: odd = 2n - 1 = ímpar // even = 2n = par // 1n ou 2n ou 3n.....
@@ -198,4 +205,30 @@ Ex.: table {
             position: sticky;
             top: -1px;
             background-color: gray;
+        }
+
+        Como fazer uma célula da tabela ocupar mais linhas e colunas:
+Use colspan e rowspan
+Ex.:
+<td colspan="2">K</td>
+<td rowspan="3">D</td>
+
+            Como selecionar e editar colunas:
+Use colgroup
+OBS.: Se quiser pode usar o span nas tags col
+Ex.:
+<table>
+        <colgroup>
+            <col class="CNome">
+            <col class="CSexo">
+            <col class="CIdade">
+            <col class="CProf">
+        </colgroup>
+</table>
+
+            Como fazer tabelas responsivas:
+Envelope a tabela em uma div, depois configure a div com o atributo overflow.
+ex.:
+#container {
+            overflow-x: auto;
         }
