@@ -232,3 +232,12 @@ ex.:
 #container {
             overflow-x: auto;
         }
+
+        Tamanho padrão dos iframes:
+300px X 150px
+
+            Como fazer links abrirem em um iframe:
+Coloque o atributo name="" na tag do iframe, após isso, coloque o parâmetro target="nome do iframe"
+
+            Como colocar um conteúdo estático no iframe:
+Na tag do iframe coloque o parâmetro srcdoc="" e coloque o conteúdo ali. É uma alternativa útil para mostar coisas simples ao invés de criar um arquivo separado para isso.
