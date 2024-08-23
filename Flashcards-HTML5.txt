@@ -241,3 +241,7 @@ Coloque o atributo name="" na tag do iframe, após isso, coloque o parâmetro ta
 
             Como colocar um conteúdo estático no iframe:
 Na tag do iframe coloque o parâmetro srcdoc="" e coloque o conteúdo ali. É uma alternativa útil para mostar coisas simples ao invés de criar um arquivo separado para isso.
+
+            Como deixar um iframe mais seguro:
+Na tag do iframe coloque os prâmetros sandbox="sandbox" e referrerpolicy="no-referrer"
+No sandbox é possível colocar vários valores para consifurar um iframe específico
