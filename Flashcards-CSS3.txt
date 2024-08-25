@@ -381,3 +381,14 @@ text-align: left (padrão), center, right
 
             Alinhamento vertical:
 vertical-algin: top, middle(padrão), bottom
+
+            Transições:
+transition-duration: ;
+transition: transform .5s;
+
+            Configurando barra de rolagem:
+Ex. para esconde-lá:
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
