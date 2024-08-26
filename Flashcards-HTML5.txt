@@ -245,3 +245,54 @@ Na tag do iframe coloque o parâmetro srcdoc="" e coloque o conteúdo ali. É um
             Como deixar um iframe mais seguro:
 Na tag do iframe coloque os prâmetros sandbox="sandbox" e referrerpolicy="no-referrer"
 No sandbox é possível colocar vários valores para consifurar um iframe específico
+
+            Ativando e desativando sugestões em formulários:
+Dentro da tag form coloque: autocomplete="off/on"
+
+            Name e Id em inputs:
+Sempre coloque os parâmetros name e id nas tags de input:
+Ex.: <input type="text" name="nome" id="inome">
+name = mais útil para HTML e PHP
+id = mais útil para JavaScript e label
+
+            Use label e sempre conecte ele a um input !
+
+            Métodos get e post em form:
+A tag form possúi um parâmetro chamado method ex.:
+<form action="cadastro.php" method="post" autocomplete="off">
+get: usado para dados não sensíveis(dados públicos), até 3Kb e com dado exclusivamente do tipo texto
+post: usado para dados sensíveis, mais de 3Kb, outros tipos de dados, pode enviar arquivos
+OBS.: o método post não protege 100% os dados, é recomendável usar também outros métodos como HTTPS !
+
+            Há diversos tipos de inputs e parâmetros dentro deles:
+type = tipo do dado do input
+name = nome do input
+id = id do input 
+required = parâmetro usado para fazer o campo ser obrigatóriamente preenchido
+checked = deixa o input já marcado, usado em checkbox e radio
+minlength="x" = tamanho mínimo do campo do input
+maxlength="x" = tamanho máximo do campo do input
+min="x" = valor numérico mínimo
+max="x" = valor numérico máximo
+step="x" = valor em que o dado numérico "avança" ex.: step="0.5" a nota sobe ou desce de 0,5 em 0,5
+value="" = valor em que o inpiut toma automaticamente, consequentemente tira o placeholder
+size="x" = tamanho em que a caixa de input irá mostrar elementos ex.: 10, então a caixa mostrará 10 elementos por vez.
+placeholder="" = parâmetro usado para dar dicas sobre o que deverá ser escrito, escrita "fantasma" que fica dentro da caixa input e some quando algo é digitado.
+autocomplete="" = ferramenta usada para autocompletar dados em formulários
+Ex.:
+<input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username">
+
+            Agrupando itens em formulários:
+Envelope todos os assuntos desejados com a tag fieldset para criar uma borda nesses itens, indicando o que desejar, dentro da fieldset use a tag legend para o título.
+
+            Input check box e radio:
+Input do tipo checkbox permite marcar e desmrcar várias opções
+Input do tipo radio só permite marcar uma opção, para esse tipo, deixe os inputs com o mesmo nome, além disso, coloque o parâmetro value="" nesse tipo de input
+Ex.:
+<fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+        </fieldset>
+
+        Ao usar um input do tipo file ou semelhante deixe o form com o method="post" para poder enviar arquivos !
