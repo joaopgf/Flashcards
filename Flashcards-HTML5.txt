@@ -270,6 +270,7 @@ name = nome do input
 id = id do input 
 required = parâmetro usado para fazer o campo ser obrigatóriamente preenchido
 checked = deixa o input já marcado, usado em checkbox e radio
+selected = deixa o elemento ja marcado
 minlength="x" = tamanho mínimo do campo do input
 maxlength="x" = tamanho máximo do campo do input
 min="x" = valor numérico mínimo
@@ -296,3 +297,43 @@ Ex.:
         </fieldset>
 
         Ao usar um input do tipo file ou semelhante deixe o form com o method="post" para poder enviar arquivos !
+
+            Fazendo listas predefinidas em forms:
+Dentro da tag form use a tag select para criar a lista predefinida, e dentro de select use a tag option para fazer as opções. Para agrupar as option use optgroup, ex.:
+<label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+
+            Existe o parâmetro selected que já deixa um item selecionado.
+            
+            Campos de texto com sugestões(datalist):
+Em um input coloque o parâmetro list="", e use a tag datalist com id e com options, ex.:
+<label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option value="PROF">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+
+            OBS.: os parâmetros de value="" não são obrigatórios
+
+            
+
+            Área de texto:
+Ex.:
+<label for="imsg">Mensagem:</label> <br>
+    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
