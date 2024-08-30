@@ -345,3 +345,15 @@ Dentro do link para css há um parâmetro chamado media, ex.:
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
 media="all" = padrao
 media="tipo de mídia and (características da mídia)"
+            Existem algumas formas de configurar as medias queries pelo CSS:
+Usando a tag style dentro da head e configurando tudo lá.
+
+Fazendo conexão com um CSS externo e nesse único CSS configurar tudo.
+
+Fazendo quantas conexões forem necessárias e criando vários arquivos CSS.
+
+            Método mobile first:
+Esse é um método que consiste em fazer sites primeiramente em sua versão mobile para depois fazer para outras versões, assim, removendo pouco ou nada na versão mobile e melhorando a UX.
+
+            Typical Device Breakpoints:
+São medidas em pixels dos tamanhos de telas, informações importantes para trabalhar com responsatividades.
