@@ -40,3 +40,6 @@ https://mockflow.com
 
 Site de emoji:
 https://emojipedia.org
+
+Site para ícones:
+https://fonts.google.com/icons

@@ -357,3 +357,7 @@ Esse é um método que consiste em fazer sites primeiramente em sua versão mobi
 
             Typical Device Breakpoints:
 São medidas em pixels dos tamanhos de telas, informações importantes para trabalhar com responsatividades.
+
+            JavaScript:
+onclick: quando clicado acontecerá algo
+onresize: quando mudar de tamanho algo acontecerá
