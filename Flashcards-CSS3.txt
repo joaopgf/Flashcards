@@ -325,6 +325,7 @@ repeat-y: faz a imagem se repetir no eixo y
 background-attachment: ; = faz um vínculo com a imagem de fundo
 scroll = conteúdo rola junto com a barra de scroll (padrão)
 fixed = fundo fica fixo e só o conteúdo rola para baixo
+
             Shorthand background
 color, image, position, repeat, size, attachment // OBS.: background size não funciona na shorthand
 
@@ -336,6 +337,7 @@ Ex.:
         </article>
     </section>
 
+            Centralizando conteúdos na tela:
 o container tera position: relative; enquanto o conteudo terá position: absolute;
 com isso, o conteudo poderá configurar o left: (ex.: px ou %) ; e top: ;, porém o ponto de referência será o topo da esquerda, caso queira consertar, use transform: translate(px ou % por ex. , );, primeiro valor: positivo vai para direita, negativo para a esquerda, segundo valor: positivo vai para baixo e negativo para cima.
 exemplo de uso para centralizar conteudo dentro do container:
@@ -392,3 +394,24 @@ Ex. para esconde-lá:
     width: 0px;
     height: 0px;
 }
+
+            Dica para bordas redondas:
+Use overflow: hidden; para fazer com que todo conteúdo vazado de uma div por ex. fique com a borda redonda ex.:
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#imagem {
+    background: #5f2c82 url('../imagens/metal.jpg') no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+Assim, a borda continuará redonda.
