@@ -415,3 +415,53 @@ Use overflow: hidden; para fazer com que todo conteúdo vazado de uma div por ex
     height: 200px;
 }
 Assim, a borda continuará redonda.
+
+            Personalizando inputs por tipo:
+form > input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+            Mais configurações de input:
+.campo > input:focus-within{
+    background-color: white;
+}
+Quando o campo do input for selecionado para digitar algo acontecerá.
+
+            Flex-box:
+As flex-box assumem as formas que forem necessárias, para serem feitas é preciso de um "pai" e os "filhos", ex.:
+.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+        }
+
+        Direções e eixos em flex-box:
+Toda flex-box possúi eixos e direções, por padrão a direção será row.
+flex-direction: ;
+direções:
+row: da esquerda para a direita.
+row-reverse: da direita para a esquerda.
+column: de cima para baixo.
+column-reverse: de baixo para cima.
+Os eixos serão o main-axis que segue o sentido da flex-direction, e o cross-axis, que cruza o eixo principal em 90º
+Além disso, cada eixo possúi respectivamente o main-start, main-end e cross-start e cross-end.
+
+            O encolhimento de itens dentro de uma flex-box irá depender do conteúdo do "filho".
+
+            flex-wrap: empacotamento/encapsulamento
+Por padrão o flex-wrap é nowrap.
+flex-wrap: ;
+nowrap: quando a flex-box/ conteiner "pai", encolhe, os "filhos" irão encolher.
+wrap: quando a flex-box/ conteiner "pai", encolhe, os "filhos" irão no sentido do eixo transversal/ cross-axis
+wrap-reverse: quando a flex-box/ conteiner "pai", encolhe, os "filhos" irão no sentido oposto do eixo transversal/ cross-axis
+
+            shorthand de flex:
+flex-direction: row;
+flex-wrap: wrap-reverse;
+
+flex-flow: row wrap-reverse;
