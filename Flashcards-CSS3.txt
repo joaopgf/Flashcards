@@ -465,3 +465,61 @@ flex-direction: row;
 flex-wrap: wrap-reverse;
 
 flex-flow: row wrap-reverse;
+
+            Alinhando conteúdos em flex-box:
+Use justify-content: ; 
+
+flex-start: o primeiro item fica no main start do main axis.
+flex-end: o último item fica no main end do main axis.
+center: centraliza os itens.
+space-between: o primeiro item fica no main start, o último no main end, e os outros itens ficam centralizados com espaçamento igual entre si.
+space-evenly: Todos os itens ficam com espaçamento igual entre si.
+space-around: divide o conteiner "pai" em partes iguais á quantidade de itens e depois centraliza os itens em cada parte. ex.: uma flex-box terá 3 itens dentro dela, então ela irá dividir 3 espaços iguais, colocar cada item nesses espaços e centralizá-los.
+
+use align-items: ; 
+
+stretch (padrão): Os itens se esticam junto com a flex-box
+flex-start: Os itens ficam no cross start do cross axis.
+flex-end: Os itens ficam no cross end do cross axis.
+center: Os itens ficam centralizados.
+
+use align-content: ; (alinhamento de itens quando a flex-box quebra)
+stretch (padrão): quando a flex-box quebra, estica os itens.
+flex-start:  quando a flex-box quebra, coloca os ites no cross start sem esticá-los e deixando um espaço em branco.
+flex-end:  quando a flex-box quebra, coloca os ites no cross end sem esticá-los e deixando um espaço em branco.
+center: cria espaços em branco no cross start e cross end e centraliza os itens.
+space-between: o primeiro item fica no cross start, o último no cross end, e os outros itens ficam centralizados com espaçamento igual entre si.
+space-evenly: Todos os itens ficam com espaçamento igual entre si.
+space-around: divide o conteiner "pai" em partes iguais e depois centraliza os itens em cada parte sem esticá-los.
+
+
+            justify-content = alinha no eixo principal
+            align-items = alinha no eixo transversal
+            align-content = alinha no eixo transversal quando os itens estão empacotados (wrap)
+
+            Exemplo de configurações padrão:
+ * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+            Centralizando itens com flex-box:
+No conteiner "pai" faça as seguintes configurações:
+main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            Order:
+Todos os itens dentro de uma flex-box possúi como padrão o parâmetro order: 0; isso é a ordem em que os itens aparecerão, quanto menor o valor da order, mais próximo do começo o item fica e vice-versa
+
+            Align-self:
+É usado em "filhos" no flex-box:
+align-self: ;
+auto/inherit: herda configurações de alinhamento do "pai"
+flex-start: se alinha no cross start
+flex-end: se alinha no cross end
+center: centraliza com base no cross axis
+stretch: se estica
