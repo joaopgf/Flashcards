@@ -387,6 +387,7 @@ vertical-algin: top, middle(padrão), bottom
             Transições:
 transition-duration: ;
 transition: transform .5s;
+transition: background-color .5s;
 
             Configurando barra de rolagem:
 Ex. para esconde-lá:
@@ -523,3 +524,23 @@ flex-start: se alinha no cross start
 flex-end: se alinha no cross end
 center: centraliza com base no cross axis
 stretch: se estica
+
+            Propriedades em flex items:
+flex-basis: ; (só pode ser usado em itens do tipo "filho")
+auto (padrão): o item aumenta e diminui o tamanho (depende da direção do conteiner) de acordo com o conteúdo e sua quantidade.
+xxpx: define o tamanho do item, mas pode diminuir se a flex-box "pai" diminuir.
+
+flex-shrink: 1 (padrão); : permite o item encolher, 1 = sim e 0 = não.
+flex-grow: 0 (padrão); : permite o item aumentar, 1 = sim e 0 = não.
+É possível colocar números acima de 1 nessas propriedades, assim, cada elemento cresce ou encolhe de maneira proporcional ao seu número com base na referência numérica dos demais itens.
+
+            Shorthand nos itens-flex:
+flex: ; = flex-grow + flex-shrink + flex-basis.
+Ex.: flex: 0 1 150px;
+
+            Prédefinições em flex:
+flex: initial; = flex: 0 1 auto; = configurações padrões do flex-item.
+flex: none; = flex: 0 0 auto;
+flex: auto; = flex: 1 1 auto;
+Outros exemplos:
+flex: 3; = flex: 3 1 auto;
