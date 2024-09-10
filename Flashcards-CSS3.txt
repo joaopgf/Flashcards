@@ -544,3 +544,27 @@ flex: none; = flex: 0 0 auto;
 flex: auto; = flex: 1 1 auto;
 Outros exemplos:
 flex: 3; = flex: 3 1 auto;
+
+            Dica:
+Quando começar a criar um site, coloque temporariamente margens visíveis nos elementos.
+
+            Anatomia grid:
+Grid container = elemento "pai"
+grid item = cada quadrado da grid area 
+grid track = linha que vai em sentido vertical ou horizontal de uma extremidade a outra.
+grid track deitada = row track 
+grid track em pé = column track
+grid line = linhas verticais que são enumeradas a partir de 1 da esquerda para direita e linhas horizontais que são enumeradas a partir de 1 de cima para baixo
+A enumeração pode ser feita com números negativos, a última grid line é -1 e o número negativo vai diminuindo. Ex.: grid line 2, -2 = segunda linha e antepenúltima linha.
+
+            Criando grid:
+No container "pai" coloque:
+display: grid;
+grid-template-columns: ; a quantidade de elementos definará a quantidade de colunas e também definirá o tamanho
+grid-template-rows: ; a quantidade de elementos definará a quantidade de linhas e também definirá o tamanho
+ex.:
+grid-template-columns: auto auto auto; = 3 colunas com largura de tamanho automático
+grid-template-rows: 100px 100px 100px; = 3 linhas com tamanho de 100px
+
+            Espaçamento entre os grid items:
+use grid-gap 
