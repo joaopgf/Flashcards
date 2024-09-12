@@ -1,0 +1,34 @@
+            Convertendo dados para números em JS:
+Use: Number.parseInt/parseFloat(elemento) ou só Number(elemento)
+
+            Convertendo dados para Strings em JS:
+Use: elemento.toString() ou String(elemento)
+
+            Template String:
+var s = 'JavaScript'
+'Eu estou estudando s' // Não faz interpolação
+'Eu estou estudando ' + s // Usa concatenação
+`Eu estou estudando ${s}` // Usa template String OBS.: Necessário uso de crase ``
+s.length // Tamanho da String (Número de caracteres)
+s.toUpperCase() // Deixa os caracteres em caixa-alta
+s.toLowerCase() // Deixa os caracteres em caixa-baixa
+
+            Mudando números:
+Para fazer com que mais casas decimais apareçam em um número use: variável.toFixed(x), ex.:
+var n1 = 1545.5
+n1 = 1545.5
+n1.toFixed(2)
+n1 = 1545.50
+
+Para mudar o ponto do número use: variável.replace('.',','), ex.:
+var n1 = 1545.5
+n1 = 1545.5
+n1.replace('.',',')
+n1 = 1545,5
+
+n1.toFixed(2).replace('.',',')
+n1 = 1545,50
+
+            Configurando número para moedas diferentes (formato monetário):
+n1.toLocaleString('idioma', {style: 'currency', currency: 'BRL/USD/EUR'})
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
