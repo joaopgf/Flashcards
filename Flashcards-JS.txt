@@ -1,5 +1,5 @@
             Convertendo dados para números em JS:
-Use: Number.parseInt/parseFloat(elemento) ou só Number(elemento)
+Use: Number.parseInt/parseFloat(elemento.value) ou só Number(elemento.value)
 
             Convertendo dados para Strings em JS:
 Use: elemento.toString() ou String(elemento)
@@ -32,3 +32,59 @@ n1 = 1545,50
             Configurando número para moedas diferentes (formato monetário):
 n1.toLocaleString('idioma', {style: 'currency', currency: 'BRL/USD/EUR'})
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+            Ordem de execução:
+Operadores aritméticos: (), **, / *, + -
+Operadores relacionais: > < >= <= == !=
+Operadores lógicos : !, &&, ||
+
+            Operador ternário:
+Teste ? true : false
+média >= 7 ? 'Aprovado' : 'Reprovado'
+
+            Document Object Model (DOM):
+Conjunto de objetos dentro do navegador que dão acesso interno a componentes do web site.
+Árvore DOM:
+raiz = window
+Após window: location, document, history
+Após document: HTML -> head, body
+
+            Selecionando objetos em JS:
+window.documente.parâmetro para selecionar ex.: getElementById, getElementsByTagName, querySelector (recomendado) etc...
+Para selecionar uma tag genérica do html sem id ou classe pode usar [índice] para selecionar uma tag em específico ex.:
+var p1 = window.document.getElementsByTagName('p')[0]; // seleciona o primeiro p
+
+            Seletores em DOM:
+getElementsByTagName
+getElementById
+getElementsByClassName
+getElementsByName
+querySelector (Mais recomendável por usar seletores CSS)
+
+            Manipulando o texto dos objetos:
+window.document.write(p1.innerText); // escreve o texto da variável (mas sem formatações)
+window.document.write(p1.innerHTML); // escreve o texto da variável com as formatações ex.:<p>bla bla <strong>bla</strong>bla</p>
+
+            Eventos de mouse em DOM:
+mouseenter: o mouse entra na área do elemento
+mousemove: o mouse se move dentro do elemento
+mousedown: o mouse segura o click dentro do elemento
+mouseup: o mouse solta o click dentro do elemento
+click: o mouse clica dentro do elemento
+mouseout: o mouse sai da área do elemento
+
+            Selecionando eventos DOM:
+Há 2 formas de fazer isso:
+Pelo próprio HTML, dentro da tag coloque on(evento) ex.:
+<p onclick>bla bla bla</p>
+
+Pelo JavaScript:
+use os addEventListener('evento', ação), ex.:
+a.addEventListener('click', clicar);
+a.addEventListener('mouseenter', entrar)
+
+            Detectando erros no código JavaScript:
+Abra o código em um navegador e depois use a devtool, ela irá mostrar o erro e a linha do erro.
+
+            Condições:
+Condição simples: if sem else.
