@@ -88,3 +88,29 @@ Abra o código em um navegador e depois use a devtool, ela irá mostrar o erro e
 
             Condições:
 Condição simples: if sem else.
+Condição composta: if com else.
+Condições aninhadas: if dentro de outro if.
+Condilçoes mpultiplas: switch case
+
+            Pegando o horário da máquina em JS:
+use: new Date().getHours();
+Ex.:
+var agora = new Date();
+var horas = agora.getHours();
+ou
+var agora = new Date().getHours();
+
+            Pegando o dia da semana em JS:
+Use: new Date().getDay();
+0 = Domingo
+1 = Segunda-feira
+2 = Terça-feira
+3 = Quarta-feira
+4 = Quinta-feira
+5 = Sexta-feira
+6 = Sábado
+Ex.:
+var agora = new Date();
+var horas = agora.getDay();
+ou
+var agora = new Date().getDay();
