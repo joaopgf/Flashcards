@@ -114,3 +114,28 @@ var agora = new Date();
 var horas = agora.getDay();
 ou
 var agora = new Date().getDay();
+
+            Alterando imagens com JS:
+Defina uma variável apra ser a imagem:
+var imagem = window.document.querySelector('#imagem');
+Depois use .src = 'endereço de imagem'
+imagem.src = 'imagens/manhaP.jpg'
+OU 
+Crie uma imagem usando:
+var img = window.document.createElement('img');
+E para melhorar o desenvolvimento coloque uma classe ou id com:
+img.setAttribute('id', 'foto');
+Em imagens criadas em JS use img.setAttribute('src', 'imagens/jovemhp.jpg') para mudar seu conteúdo.
+
+            Inputs radio:
+Em inputs do tipo radio, use índices começando com 0 para saber qual elemento está sendo marcado.
+Ex.:
+if (fsex[0].checked) // conferindo de a primeira opção está selecionada.
+
+            Estilizando páginas com JS:
+Selecione o elemento e depois qual será a modificação, ex.:
+window.document.body.style.backgroundColor = '#908E79'; // Muda cor de fundo do body
+res.style.textAlign = 'center' // Centraliza o texto na variável res
+
+            Emojis em JS:
+Use: \u{código do emoji} entre crases ``
