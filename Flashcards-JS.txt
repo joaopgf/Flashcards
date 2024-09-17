@@ -64,6 +64,7 @@ querySelector (Mais recomendável por usar seletores CSS)
             Manipulando o texto dos objetos:
 window.document.write(p1.innerText); // escreve o texto da variável (mas sem formatações)
 window.document.write(p1.innerHTML); // escreve o texto da variável com as formatações ex.:<p>bla bla <strong>bla</strong>bla</p>
+item.text = `${n} x ${c} = ${n*c}` // escreve um texto na variável item
 
             Eventos de mouse em DOM:
 mouseenter: o mouse entra na área do elemento
@@ -139,3 +140,12 @@ res.style.textAlign = 'center' // Centraliza o texto na variável res
 
             Emojis em JS:
 Use: \u{código do emoji} entre crases ``
+
+            Criando elementos da HTML em JS:
+Use creatElement ex.:
+window.document.createElement('option')
+let item = window.document.createElement('option') // criando elemento option da HTML para uma lista select
+
+            Elementos filhos em JS:
+Use appendChild(item) ex.:
+tab.appendChild(item) // no item tab será inserido o elemento item como um "filho"

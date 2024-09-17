@@ -317,7 +317,7 @@ Dentro da tag form use a tag select para criar a lista predefinida, e dentro de 
                 </optgroup>
             </select>
 
-            Existe o parâmetro selected que já deixa um item selecionado.
+            Existe o parâmetro selected que já deixa um item selecionado. E há tambem o parâmetro size que define o tamanho da lista para mostrar mais elementos sem abri-lá.
             
             Campos de texto com sugestões(datalist):
 Em um input coloque o parâmetro list="", e use a tag datalist com id e com options, ex.:
