@@ -149,3 +149,21 @@ let item = window.document.createElement('option') // criando elemento option da
             Elementos filhos em JS:
 Use appendChild(item) ex.:
 tab.appendChild(item) // no item tab será inserido o elemento item como um "filho"
+
+            Vetores/arrays em JS:
+criar vetor: let num[]; ou let num[5 , 7 ,8] // use [] para indicar que a variável é um vetor e separe os valores com vírgula
+
+quantidade de elementos em vetores:
+use .length ex.: num.length // retorna um número que é a quantidade de elementos
+
+adicionar um novo valor em vetores:
+use num[índice novo] = valor; OU num.push(valor) // usando .push() você adiciona um valor diretamente para uma nova posição no vetor após o final
+
+Mostrar elementos em ordem crescente:
+use num.sort()
+
+Loop de repetição:
+Você pode usar o clássico for, mas em JS há uma opção mais simples, for(let variável in vetor){}
+
+Procurando valores em vetores:
+Use vetor.indexOf(valor) // o JS irá checar se dentro do vetor existe esse número, se existir ele irá retornar o índice do valor, senão irá retornar -1
