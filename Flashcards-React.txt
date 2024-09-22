@@ -1,0 +1,19 @@
+                  Criando um arquivo React:
+Dentro de uma pasta abra um terminal integrado, nele digite npx create-react-app nome do app
+Dê enter e espere os arquivos serem baixados.
+Após isso, de o comando: cd .\nome do app criado\
+E depois: npm start
+
+                  Dica:
+Separe por comentários as áreas de exportações e hooks, ex.: //style  //componentes etc...
+Use o devtools para ver se há algum erro
+
+                  Criando componentes:
+Na pasta src crie uma pasta para os componentes, de preferência chamada "components"
+Dentro da pasta components crie os componentes usando camel-case e formato js ex.:   FirstComponent.js
+No arquivo crie o componente que desejar e no final exporte ele usando: export default NomeComponente;
+Após isso, no app.js, importe o componente que quiser usando: import NomeComponente from './pasta/NomeComponente' 
+Ex.: import FirstComponent from './components/FirstComponent'
+Para usar o componente criado use ele em forma de tag com fechamento ex.: <FirstComponent />
+
+
