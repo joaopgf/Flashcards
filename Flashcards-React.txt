@@ -16,4 +16,13 @@ Após isso, no app.js, importe o componente que quiser usando: import NomeCompon
 Ex.: import FirstComponent from './components/FirstComponent'
 Para usar o componente criado use ele em forma de tag com fechamento ex.: <FirstComponent />
 
+            Adicionando imagens pela pasta public:
+Coloque uma imagem na pasta public, após isso, você pode ir no app.js e usar essa imagem com o link de /nome da imagem ex.: <img src="/img1.jpg" alt="paisagem" />
 
+            Adicionando imagens por importação:
+Na pasta src crie uma pasta chamada assets e coloque a imagem nela, após isso importe a imagem. Ao usa-lá, crie a tag imagem e no parâmetro src coloque {nome imagem} ex.:
+import city from './assets/city.jpg';
+{/*Imagem em src/assets*/}
+      <div>
+       <img src={city} alt="cidade" />
+      </div>
