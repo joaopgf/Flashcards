@@ -26,3 +26,47 @@ import city from './assets/city.jpg';
       <div>
        <img src={city} alt="cidade" />
       </div>
+
+                  Renderizando listas:
+
+Para renderizar listas é preciso definir uma key para cada item dela, há duas formas de fazer isso:
+import { useState } from "react";
+
+const ListRender = () => {
+    const [list] = useState(["João", "Pedro", "Matias","Isadora"]);
+    const [users] = useState([
+      {id: 15975, name: "João", age: 19},
+      {id: 156516, name: "Isadora", age: 18},
+      {id: 789421, name: "Pedro", age: 30},
+    ]);
+
+  return (
+    <div>
+        <ul>
+            {list.map((item, i) => (
+                <li key={i}>{item}</li>
+            ))}
+        </ul>
+
+        <ul>
+          {users.map((user) =>(
+            <li key={users.id}>
+              {user.name} - {user.age}
+            </li>
+          ))}
+        </ul>
+    </div>
+  )
+}
+
+                  props é um dado passado do elemento pai para o elemento filho:
+Há 3 maneiras de fazer isso:
+Maneira direta: na própria tag no componente defina o prop.
+<ShowUserName name="João"/>
+Variável: no app.js defina uma variável lá e depois passe para a tag:
+const name = "Isadora"
+<ShowUserName name={name}/>
+State: defina uma variável com state:
+const [userName] = useState("Maria");
+<ShowUserName name={name}/>
+
